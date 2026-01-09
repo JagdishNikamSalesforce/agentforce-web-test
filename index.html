@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Agentforce Podcast Agent – Test</title>
+  </head>
+
+  <body>
+    <h2>Agentforce Podcast Agent – GitHub Test</h2>
+    <p>If everything is configured correctly, a chat icon will appear.</p>
+
+    <script type="text/javascript">
+      function initEmbeddedMessaging() {
+        try {
+          embeddedservice_bootstrap.settings.language = "en_US";
+
+          embeddedservice_bootstrap.init(
+            "00DDv000003loj2",
+            "Agentforce_Podcast_Channel",
+            "https://bo1736148796784--btfullai.sandbox.my.site.com/ESWAgentforcePodcastCha1766485247948",
+            {
+              scrt2URL:
+                "https://bo1736148796784--btfullai.sandbox.my.salesforce-scrt.com",
+            }
+          );
+        } catch (err) {
+          console.error("Error loading Embedded Messaging: ", err);
+        }
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://bo1736148796784--btfullai.sandbox.my.site.com/ESWAgentforcePodcastCha1766485247948/assets/js/bootstrap.min.js"
+      onload="initEmbeddedMessaging()">
+    </script>
+  </body>
+</html>
